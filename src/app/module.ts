@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './component';
-import { UsingNgContentModule } from './ng-content/module';
+import { SlotDirectiveModule } from './ng-content/directives/module';
+import { SlotWithDefaultRendererModule } from './ng-content/slot-with-default-renderer/module';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, UsingNgContentModule],
+  imports: [BrowserModule, SlotWithDefaultRendererModule, SlotDirectiveModule],
   providers: [],
   bootstrap: [AppComponent]
 })

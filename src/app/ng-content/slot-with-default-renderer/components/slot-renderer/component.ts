@@ -9,15 +9,15 @@ import {
   TemplateRef
 } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
-import { SlotDirective } from '../../directives/directive';
+import { SlotDirective } from 'src/app/ng-content/directives/directive';
 
 @Component({
-  selector: 'app-slot-with-default',
+  selector: 'app-slot-renderer',
   templateUrl: './component.html',
   styleUrls: ['./component.css'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class SlotWithDefaultComponent implements OnInit {
+export class SlotRendererComponent implements OnInit {
   @ContentChildren(SlotDirective, { descendants: true }) set slotDirective(slotDirective: QueryList<SlotDirective>) {
     this.isSlotSet.next(slotDirective.length === 1);
   }

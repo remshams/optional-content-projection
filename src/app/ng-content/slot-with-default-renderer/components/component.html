@@ -1,9 +1,9 @@
-<app-slot-with-default [defaultSlotContent]="defaultHeader"
+<app-slot-renderer [defaultSlotContent]="defaultHeader"
   ><ng-content select="[slot='header']"></ng-content
-></app-slot-with-default>
-<app-slot-with-default [defaultSlotContent]="defaultFooter"
+></app-slot-renderer>
+<app-slot-renderer [defaultSlotContent]="defaultFooter"
   ><ng-content select="[slot='footer']"></ng-content
-></app-slot-with-default>
+></app-slot-renderer>
 
 <ng-template #defaultHeader> Default Header </ng-template>
 <ng-template #defaultFooter> Default Footer </ng-template>
