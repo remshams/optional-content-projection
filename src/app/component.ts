@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./component.css']
 })
 export class AppComponent {
-  title = 'multiple-component-directive';
+  title = 'optional-content-projection';
 }

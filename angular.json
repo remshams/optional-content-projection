@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "multiple-component-directive": {
+    "optional-content-projection": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/multiple-component-directive",
+            "outputPath": "dist/optional-content-projection",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -65,18 +65,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "multiple-component-directive:build"
+            "browserTarget": "optional-content-projection:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "multiple-component-directive:build:production"
+              "browserTarget": "optional-content-projection:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "multiple-component-directive:build"
+            "browserTarget": "optional-content-projection:build"
           }
         },
         "test": {
@@ -113,16 +113,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "multiple-component-directive:serve"
+            "devServerTarget": "optional-content-projection:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "multiple-component-directive:serve:production"
+              "devServerTarget": "optional-content-projection:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "multiple-component-directive"
+  "defaultProject": "optional-content-projection"
 }
