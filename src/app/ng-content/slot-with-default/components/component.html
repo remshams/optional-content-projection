@@ -1,0 +1,7 @@
+<h2>Slot With Default</h2>
+
+<ng-content select="[slot='header']" *ngIf="isSlotSet('header') | async; else defaultHeader"></ng-content>
+<ng-content select="[slot='footer']" *ngIf="isSlotSet('footer') | async; else defaultFooter"></ng-content>
+
+<ng-template #defaultHeader> Default Header </ng-template>
+<ng-template #defaultFooter> Default Footer </ng-template>
