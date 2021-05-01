@@ -1,11 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { UsingNgContentComponent } from './components/component';
+import { ContentOrDefaultComponent } from './components/component';
+import { SlotWithDefaultComponent } from './components/content-or-default/component';
 import { SlotDirective } from './directives/directive';
 
 @NgModule({
-  declarations: [UsingNgContentComponent, SlotDirective],
+  declarations: [ContentOrDefaultComponent, SlotDirective, SlotWithDefaultComponent],
   imports: [CommonModule],
-  exports: [UsingNgContentComponent, SlotDirective]
+  exports: [ContentOrDefaultComponent, SlotDirective]
 })
 export class UsingNgContentModule {}
