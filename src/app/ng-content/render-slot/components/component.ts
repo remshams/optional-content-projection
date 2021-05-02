@@ -5,7 +5,7 @@ import { SlotDirective } from '../../directives/directive';
 import { SlotName, SlotNames } from '../../directives/model';
 
 @Component({
-  selector: 'app-slot-with-default',
+  selector: 'app-render-slot',
   templateUrl: './component.html',
   styleUrls: ['./component.css'],
   changeDetection: ChangeDetectionStrategy.OnPush

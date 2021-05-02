@@ -1,13 +1,13 @@
 <h1>Optional-content-projection</h1>
-<app-slot-with-default-renderer>
+<app-render-slot>
   <div appSlot slot="header">Custom Header</div>
   <div appSlot slot="footer">Custom Footer</div>
-</app-slot-with-default-renderer>
+</app-render-slot>
 
-<app-slot-with-default>
+<app-render-slot-directive>
   <div appSlot slot="header">Custom Header</div>
   <div appSlot slot="footer">Custom Footer</div>
-</app-slot-with-default>
+</app-render-slot-directive>
 
 <app-template-render-props [templates]="{ 'header': header, 'footer': footer }"></app-template-render-props>
 

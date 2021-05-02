@@ -5,12 +5,12 @@ import { SlotDirective } from '../../directives/directive';
 import { SlotName, SlotNames } from '../../directives/model';
 
 @Component({
-  selector: 'app-slot-with-default-renderer',
+  selector: 'app-render-slot-directive',
   templateUrl: './component.html',
   styleUrls: ['./component.css'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class SlotWithDefaultRendererComponent {
+export class RenderSlotDirectiveComponent {
   @ContentChildren(SlotDirective, { read: ElementRef }) set slotDirectives(value: QueryList<ElementRef>) {
     this.nativeSlots.next(Array.from(value));
   }
