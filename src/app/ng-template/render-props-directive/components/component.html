@@ -1,1 +1,11 @@
 <h2>Template Render Props Directive</h2>
+
+<app-render-template
+  [template]="{ customTemplate: (templates$ | async)?.header, defaultTemplate: defaultHeader }"
+></app-render-template>
+<app-render-template
+  [template]="{ customTemplate: (templates$ | async)?.footer, defaultTemplate: defaultHeader }"
+></app-render-template>
+
+<ng-template #defaultHeader> <div>Default Header</div> </ng-template>
+<ng-template #defaultFooter> <div>Default Footer</div> </ng-template>

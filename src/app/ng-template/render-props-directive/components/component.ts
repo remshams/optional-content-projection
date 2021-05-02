@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, ContentChildren, QueryList } from '@angular/core';
 import { Observable, ReplaySubject } from 'rxjs';
-import { map } from 'rxjs/operators';
-import { Templates } from '../../model';
+import { map, shareReplay } from 'rxjs/operators';
+import { Templates } from '../../shared/model';
 import { TemplateSlotDirective } from '../directives/template-slot/directive';
 
 @Component({
@@ -39,7 +39,8 @@ export class RenderPropsDirectiveComponent {
               : partialTemplateDirectives,
           {}
         )
-      )
+      ),
+      shareReplay({ bufferSize: 1, refCount: true })
     );
   }
 }

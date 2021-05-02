@@ -1,5 +1,5 @@
 import { Directive, Input, TemplateRef } from '@angular/core';
-import { TemplateTypes } from 'src/app/ng-template/model';
+import { TemplateTypes } from 'src/app/ng-template/shared/model';
 
 @Directive({
   selector: '[appTemplateSlot]'
@@ -7,5 +7,5 @@ import { TemplateTypes } from 'src/app/ng-template/model';
 export class TemplateSlotDirective {
   @Input() appTemplateSlot: TemplateTypes | null = null;
 
-  constructor(public template: TemplateRef<{}>) {}
+  constructor(public template: TemplateRef<unknown>) {}
 }

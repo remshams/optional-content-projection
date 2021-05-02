@@ -1,4 +1,4 @@
-import { Templates } from '../model';
+import { Templates } from '../shared/model';
 
 export type ComponentWithTemplateSlots = {
   templates: Partial<Templates>;
