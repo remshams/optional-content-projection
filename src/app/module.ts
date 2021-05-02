@@ -4,6 +4,7 @@ import { AppComponent } from './component';
 import { SlotDirectiveModule } from './ng-content/directives/module';
 import { SlotWithDefaultRendererModule } from './ng-content/slot-with-default-renderer/module';
 import { SlotWithDefaultModule } from './ng-content/slot-with-default/module';
+import { RenderPropsDirectiveModule } from './ng-template/render-props-directive/module';
 import { TemplateRenderPropsModule } from './ng-template/render-props/module';
 
 @NgModule({
@@ -13,7 +14,8 @@ import { TemplateRenderPropsModule } from './ng-template/render-props/module';
     SlotWithDefaultModule,
     SlotWithDefaultRendererModule,
     SlotDirectiveModule,
-    TemplateRenderPropsModule
+    TemplateRenderPropsModule,
+    RenderPropsDirectiveModule
   ],
   providers: [],
   bootstrap: [AppComponent]
