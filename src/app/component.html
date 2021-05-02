@@ -9,7 +9,7 @@
   <div appSlot slot="footer">Custom Footer</div>
 </app-slot-with-default>
 
-<app-template-render-props [customTemplates]="{ 'header': header, 'footer': footer }"></app-template-render-props>
+<app-template-render-props [templates]="{ 'header': header, 'footer': footer }"></app-template-render-props>
 
 <ng-template #header><div>Custom Header</div></ng-template>
 <ng-template #footer><div>Custom Footer</div></ng-template>

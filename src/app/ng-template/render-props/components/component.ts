@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, Input, TemplateRef } from '@angular/core';
-import { RenderTemplates, TemplateTypes } from '../model';
+import { Templates, TemplateTypes } from '../model';
 
 @Component({
   selector: 'app-template-render-props',
@@ -8,9 +8,9 @@ import { RenderTemplates, TemplateTypes } from '../model';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class TemplateRenderPropsComponent {
-  @Input() customTemplates: Partial<RenderTemplates> = {};
+  @Input() templates: Partial<Templates> = {};
 
   getTemplate(key: TemplateTypes): TemplateRef<{}> | null {
-    return this.customTemplates[key] ?? null;
+    return this.templates[key] ?? null;
   }
 }

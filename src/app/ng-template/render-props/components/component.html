@@ -1,7 +1,11 @@
 <h2>Template Render Props</h2>
 
-<ng-container *ngTemplateOutlet="getTemplate('header') ? getTemplate('header') : defaultHeader"></ng-container>
-<ng-container *ngTemplateOutlet="getTemplate('footer') ? getTemplate('footer') : defaultFooter"></ng-container>
+<app-render-template
+  [template]="{ customTemplate: templates.header, defaultTemplate: defaultHeader }"
+></app-render-template>
+<app-render-template
+  [template]="{ customTemplate: templates.footer, defaultTemplate: defaultHeader }"
+></app-render-template>
 
-<ng-template #defaultHeader> Default Header </ng-template>
-<ng-template #defaultFooter> Default Footer </ng-template>
+<ng-template #defaultHeader> <div>Default Header</div> </ng-template>
+<ng-template #defaultFooter> <div>Default Footer</div> </ng-template>
