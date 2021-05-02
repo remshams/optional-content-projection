@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, Input, TemplateRef } from '@angular/core';
-import { Templates, TemplateTypes } from '../model';
+import { Templates, TemplateTypes } from '../../model';
 
 @Component({
   selector: 'app-template-render-props',
