@@ -1,5 +1,11 @@
 <h2>Template Render Props</h2>
 
+<h3>Render Props</h3>
+
+<ng-container *ngTemplateOutlet="hasTemplate('header') ? getTemplate('header') : defaultHeader"></ng-container>
+<ng-container *ngTemplateOutlet="hasTemplate('footer') ? getTemplate('footer') : defaultFooter"></ng-container>
+
+<h3>Render Template</h3>
 <app-render-template
   [template]="{ customTemplate: templates.header, defaultTemplate: defaultHeader }"
 ></app-render-template>

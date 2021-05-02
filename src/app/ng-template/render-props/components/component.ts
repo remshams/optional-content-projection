@@ -13,4 +13,8 @@ export class TemplateRenderPropsComponent {
   getTemplate(key: TemplateTypes): TemplateRef<{}> | null {
     return this.templates[key] ?? null;
   }
+
+  hasTemplate(key: TemplateTypes): boolean {
+    return !!this.templates[key];
+  }
 }
