@@ -10,7 +10,7 @@ import { SlotName, SlotNames } from '../../directives/model';
   styleUrls: ['./component.css'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class SlotWithDefaultComponent {
+export class RenderSlotComponent {
   @ContentChildren(SlotDirective, { read: ElementRef }) set slotDirectives(value: QueryList<ElementRef>) {
     this.nativeSlots.next(Array.from(value));
   }
