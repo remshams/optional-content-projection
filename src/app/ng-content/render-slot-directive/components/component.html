@@ -1,4 +1,4 @@
-<h2>Slot With Default Renderer</h2>
+<h2>Slot With Default Renderer - Not Working</h2>
 <app-slot-renderer [defaultSlotContent]="defaultHeader"
   ><ng-content select="[slot='header']"></ng-content
 ></app-slot-renderer>
@@ -6,5 +6,5 @@
   ><ng-content select="[slot='footer']"></ng-content
 ></app-slot-renderer>
 
-<ng-template #defaultHeader> Default Header </ng-template>
-<ng-template #defaultFooter> Default Footer </ng-template>
+<ng-template #defaultHeader> <div>Default Header</div> </ng-template>
+<ng-template #defaultFooter> <div>Default Footer</div> </ng-template>
