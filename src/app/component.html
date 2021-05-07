@@ -15,6 +15,6 @@
 <ng-template #footer><div>Custom Footer</div></ng-template>
 
 <app-render-props-directive>
-  <ng-container *appTemplateSlot="'header'"><div>Custom Header</div></ng-container>
-  <ng-container *appTemplateSlot="'footer'"><div>Custom Footer</div></ng-container>
+  <div *appTemplateSlot="'header'">Custom Header</div>
+  <div *appTemplateSlot="'footer'">Custom Footer</div>
 </app-render-props-directive>
