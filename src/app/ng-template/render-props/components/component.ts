@@ -1,5 +1,5 @@
-import { ChangeDetectionStrategy, Component, Input, TemplateRef } from '@angular/core';
-import { SlotName, Templates } from '../../shared/model';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { Templates } from '../../shared/model';
 
 @Component({
   selector: 'app-template-render-props',
@@ -9,12 +9,4 @@ import { SlotName, Templates } from '../../shared/model';
 })
 export class TemplateRenderPropsComponent {
   @Input() templates: Partial<Templates> = {};
-
-  getTemplate(key: SlotName): TemplateRef<{}> | null {
-    return this.templates[key] ?? null;
-  }
-
-  hasTemplate(key: SlotName): boolean {
-    return !!this.templates[key];
-  }
 }

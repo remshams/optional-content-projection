@@ -1,13 +1,18 @@
 <h1>Optional-content-projection</h1>
+
+<h2>ng-content</h2>
+
 <app-render-slot>
   <div appSlot slot="header">Custom Header</div>
   <div appSlot slot="footer">Custom Footer</div>
 </app-render-slot>
 
-<app-render-slot-directive>
+<app-render-slot-slot-renderer>
   <div appSlot slot="header">Custom Header</div>
   <div appSlot slot="footer">Custom Footer</div>
-</app-render-slot-directive>
+</app-render-slot-slot-renderer>
+
+<h2>ng-template</h2>
 
 <app-template-render-props [templates]="{ 'header': header, 'footer': footer }"></app-template-render-props>
 
