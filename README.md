@@ -1,6 +1,6 @@
 # Optional Content Projection in Angular
 
-Example Repository for optional content projection in angular using ng-content and or ng-template
+Example Repository for [optional content projection](https://dev.to/remshams/optional-content-projection-injection-in-angular-2jnn) in angular using ng-content and or ng-template
 
 ## Development server
 
