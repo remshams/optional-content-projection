@@ -5,7 +5,7 @@ import { SlotDirectiveModule } from './ng-content/directives/module';
 import { RenderSlotSlotRendererModule } from './ng-content/render-slot-renderer/module';
 import { RenderSlotModule } from './ng-content/render-slot/module';
 import { RenderPropsDirectiveModule } from './ng-template/render-props-directive/module';
-import { TemplateRenderPropsModule } from './ng-template/render-props/module';
+import { RenderPropsModule } from './ng-template/render-props/module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -14,7 +14,7 @@ import { TemplateRenderPropsModule } from './ng-template/render-props/module';
     RenderSlotModule,
     RenderSlotSlotRendererModule,
     SlotDirectiveModule,
-    TemplateRenderPropsModule,
+    RenderPropsModule,
     RenderPropsDirectiveModule
   ],
   providers: [],

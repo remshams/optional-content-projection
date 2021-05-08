@@ -1,11 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { NgTemplateSharedModule } from '../shared/module';
-import { TemplateRenderPropsComponent } from './components/component';
+import { RenderPropsComponent } from './components/component';
 
 @NgModule({
-  declarations: [TemplateRenderPropsComponent],
+  declarations: [RenderPropsComponent],
   imports: [CommonModule, NgTemplateSharedModule],
-  exports: [TemplateRenderPropsComponent]
+  exports: [RenderPropsComponent]
 })
-export class TemplateRenderPropsModule {}
+export class RenderPropsModule {}
